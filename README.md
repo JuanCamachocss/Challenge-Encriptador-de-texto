@@ -4,21 +4,21 @@ Este proyecto es un encriptador de texto que permite al usuario cifrar y descifr
 
 ## Comenzando 🚀
 
-Como parametros nos dieron los siguientes:
+Como parametros se nos proporciono lo siguiente:
 
-:fa-check: Debe funcionar solo con letras minúsculas
+✔️ Debe funcionar solo con letras minúsculas
 
-:fa-check: No deben ser utilizados letras con acentos ni caracteres especiales
+✔️ No deben ser utilizados letras con acentos ni caracteres especiales
 
-:fa-check: Debe ser posible convertir una palabra para la versión encriptada también  	 devolver una palabra encriptada para su versión original.
+✔️ Debe ser posible convertir una palabra para la versión encriptada también  	 devolver una palabra encriptada para su versión original.
 
 Las "llaves" de encriptación que utilizaremos son las siguientes:
 
-:fa-check: La letra "e" es convertida para "enter"
-:fa-check: La letra "i" es convertida para "imes"
-:fa-check: La letra "a" es convertida para "ai"
-:fa-check: La letra "o" es convertida para "ober"
-:fa-check: La letra "u" es convertida para "ufat"
+✔️ La letra "e" es convertida para "enter"
+✔️ La letra "i" es convertida para "imes"
+✔️ La letra "a" es convertida para "ai"
+✔️ La letra "o" es convertida para "ober"
+✔️ La letra "u" es convertida para "ufat"
 
 ## Construido con 🛠️
 
