@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario: #0A3871;
+    --color-secundario: #F3F5FC;
+    --color-terciario: #FFFFFF;
+    --fuente-inter:'Inter', system-ui;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+html, body {
+    background-color: var(--color-secundario);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.logo_alura {
+    align-self: baseline;
+    object-fit: contain;
+    margin: 2.5rem 0 0 2.5rem;
+    
+}
+
+.contenido_encriptacion {
+    width: 45%;
+    height: 784px;
+    font-family: var(--fuente-inter);
+    margin-bottom: 2.5rem;
+}
+
+.entrada_usuario {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    resize: none;
+    width: 100%;
+    height: 658px;
+    outline: none;
+    border: none;
+    word-break: break-word;
+}
+
+.entrada_usuario::placeholder{
+    color: var(--color-primario); 
+}
+
+.contenido_parametros {
+    color: #495057;
+    display: flex;
+    font-size: 0.75rem;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.contenido_botones {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 24px;
+}
+
+.boton_encriptar {
+    border: 1px solid var(--color-primario);
+    color: var(--color-terciario);
+    font-size: 1rem;
+    border-radius: 24px;
+    background-color: var(--color-primario);
+    width: 20.5rem;
+    padding: 1% 0;
+}
+
+.boton_desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid var(--color-primario);
+    color: var(--color-primario);
+    font-size: 1rem;
+    border-radius: 24px;
+    width: 20.5rem;
+    padding: 1.5rem 0;
+
+}
+
+.contenido_desencriptacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    font-family: var(--fuente-inter);
+    box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF;
+    width: 25%;
+    height: 944px;
+    margin: 2.5rem 2.5rem 2.5rem 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contenido_texto_desencriptacion {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-inter);
+    margin: 2rem;
+    text-align: center;
+    gap: 1rem;
+    display: block;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.parrafo {
+    font-size: 1rem;
+    font-weight: regular;
+}
+
+.resultado_encriptacion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    
+}
+
+.resultado {
+    background-color: transparent;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    color: #495057;
+    word-break: break-word;
+    resize: none;
+    height: 100dvh;
+    margin: 1rem;
+    width: 86%;
+    border: none;
+    outline: none;
+}
+
+.boton_copiar {
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-primario);
+    color: var(--color-primario);
+    font-size: 1rem;
+    border-radius: 24px;
+    width: 80%;
+    padding: 1.5rem 0;
+    margin: 32px;
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+}
+
+.muñeco {
+    width: 100%;
+    display: block;
+}
+
+.texto {
+    display: block;
+}
+
+.parrafo {
+    display: block;
+}
+
+.logo_github {
+    width: 30px;
+    height: 30px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fuente-inter);
+}
+
+footer p {
+    height: 31px;
+
+}
+
+@media (max-width: 769px) {
+
+    
+    .contenido {
+        flex-direction: column;
+        margin: 40px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-right: 0;
+        gap: 13px;
+       
+    }
+
+
+    .contenido_desencriptacion{
+        width: 80%;
+        height: 133px;
+        margin-top: 5px;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 25px;
+        
+    }
+
+    .resultado_encriptacion {
+        width: 90%;
+        height: 85%;
+        gap: 5px;
+        margin: 5px;
+    }
+
+    .boton_copiar{
+        display: none;
+    }
+
+    .resultado_encriptacion textarea {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    .contenido_desencriptacion .muñeco {
+        display: none;
+    }
+    
+    .contenido_encriptacion {
+        width: 80%;
+        height: 543px;
+        margin-bottom: 0;
+    }
+
+    .contenido_botones{
+        width: 100%;
+    }
+
+    .entrada_usuario {
+       width: 100%;
+       height: 438px;
+    }
+
+    .logo_alura {
+        margin-bottom: 73px;
+    }
+
+    header {
+        bottom: 0;
+    }
+    
+}
+
+@media (max-width: 376px) {
+
+    .contenido  {
+        flex-direction: column;
+
+    }
+
+    .entrada_usuario{
+        width: 343px;
+        height: 270px;
+    }
+
+    .contenido_encriptacion{
+        width: 343px;
+        height: 20%;
+    }
+
+    .resultado_encriptacion p {
+        width: 90%;
+        height: 90%;
+        margin: 0;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+
+    .contenido_botones{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .boton_encriptar {
+        width: 343px;
+        padding: 24px;
+        height: 67px;
+    }
+
+    .boton_desencriptar {  
+        width: 343px;
+        padding: 24px;
+        height: 67px;
+    }
+    
+    .logo_alura {
+        margin: 24px 0 40px 16px;
+        width: 30%;
+    }
+
+    .contenido_desencriptacion{
+        width: 327px;
+        height: 180px;
+
+    }
+}

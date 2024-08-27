@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <main class="contenido"> 
+        <img class="logo_alura"src="./Imagenes/Logo.png" alt="Logo alura" > 
+        <div class="contenido_encriptacion">
+                <div>            
+                    <textarea class="entrada_usuario" name="text" placeholder="Ingrese el texto aqui" autofocus></textarea>
+                </div>
+                <div>    
+                    <p class="contenido_parametros"><img src="./Imagenes/icon-exclamacion.png" alt="Icono de exclamacion">
+                        Solo letras minúsculas y sin acentos</p>
+                </div>   
+                <div class="contenido_botones">
+                        <button class="boton_encriptar" onclick="botonEncriptar()">Encriptar</button>          
+                        <button class="boton_desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+        </div>    
+            <div class="contenido_desencriptacion">
+                <div>
+                    <img id="muñeco" class="muñeco" src="./Imagenes/Muñeco.png" alt="Muñeco con lupa">
+                </div>
+                <div class="contenido_texto_desencriptacion">
+                        <p id="parrafoUno" class="titulo">Ningún mensaje fue encontrado</p> 
+                        <p id="parrafoDos" class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                                          
+                </div> 
+                <div class="resultado_encriptacion">
+                    <textarea class="resultado" name="text"></textarea>
+                    <button class="boton_copiar" onclick="botonCopiar()" >Copiar</button>
+                </div>       
+            </div>  
+            
+    </main>
+    <footer>
+        <p>Desarrollado por Juan Pablo Camacho Martinez</p>
+        <a href="https://github.com/JuanCamachocss" target="_blank">
+            <img class="logo_github" src="./Imagenes/github.png" alt="Logo Github">
+        </a>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
